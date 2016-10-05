@@ -1,0 +1,22 @@
+﻿<Window x:Class="XmlLongLinesSplitter.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="XML line breaking" Height="220" Width="600" MinWidth="150" MinHeight="100" ResizeMode="CanResizeWithGrip">
+	<StackPanel Orientation="Vertical" Margin="4">
+		<TextBlock Height="21" Width="Auto" TextAlignment="Center" Text="This app pasts line breaks between &quot;&gt;&lt;&quot; chars in XML" />
+		<Button HorizontalAlignment="Center" Click="Button1Click" Margin="0 0 0 4">Select source XML file</Button>
+		<RichTextBox Height="Auto" Width="Auto">
+			<FlowDocument>
+				<Paragraph>
+					<Run>At this point in time 07.05.2010 all well-known apps have a crash if they open a XML with more than 10 MB.</Run>
+				</Paragraph>
+				<Paragraph>
+					<Run>Some well-known apps block the entire system.</Run>
+				</Paragraph>
+				<Paragraph>
+                    <Run>Visual Studio, Notepad++, XML Editor (IE), Dreamweaver, XML Notepad, Notepad, WordPad, Altova and so on</Run>
+				</Paragraph>
+			</FlowDocument>
+		</RichTextBox>
+	</StackPanel>
+</Window>
